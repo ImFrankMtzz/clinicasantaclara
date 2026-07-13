@@ -5,10 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Centro Médico de Especialidades Santa Clara — Lázaro Cárdenas, Michoacán</title>
   <meta name="description" content="Centro Médico de Especialidades Santa Clara en Lázaro Cárdenas, Michoacán: especialidades médicas, laboratorio y urgencias las 24 horas. Agenda tu cita por WhatsApp o teléfono.">
+  <!-- ⚠ ANTES DE PUBLICAR: reemplazar TU-DOMINIO.com por el dominio real en las
+       5 páginas. Sin una URL absoluta, WhatsApp y Facebook no muestran la imagen
+       de previsualización al compartir el enlace. -->
+  <link rel="canonical" href="https://TU-DOMINIO.com/index.html">
   <meta property="og:title" content="Centro Médico de Especialidades Santa Clara — Lázaro Cárdenas">
   <meta property="og:description" content="El centro médico más completo de la región: especialidades, laboratorio y atención las 24 horas.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_MX">
+  <meta property="og:site_name" content="Centro Médico de Especialidades Santa Clara">
+  <meta property="og:url" content="https://TU-DOMINIO.com/index.html">
+  <meta property="og:image" content="https://TU-DOMINIO.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Centro Médico de Especialidades Santa Clara — Urgencias 24 horas en Lázaro Cárdenas, Michoacán">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231e8e4e'/><path d='M27 14h10v13h13v10H37v13H27V37H14V27h13z' fill='white'/></svg>">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -224,8 +235,43 @@
       </div>
     </section>
 
-    <!-- ============ CTA FINAL ============ -->
+    <!-- ============ PREGUNTAS FRECUENTES ============
+         ⚠ Confirmar cada respuesta con el cliente antes de publicar.
+         Si se edita una pregunta aquí, actualizar también el bloque
+         JSON-LD de FAQPage al final de esta página. -->
     <section class="section">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2>Resolvemos tus dudas antes de tu visita</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>¿Necesito cita para consultar?</summary>
+            <div class="faq-body">Para consulta de especialidad te recomendamos agendar por WhatsApp o teléfono, así te aseguramos el horario del médico que buscas. Las urgencias se atienden de inmediato, sin cita, a cualquier hora.</div>
+          </details>
+          <details>
+            <summary>¿Atienden urgencias de noche y en fin de semana?</summary>
+            <div class="faq-body">Sí. Contamos con médico de guardia las 24 horas, los 365 días del año, incluidos domingos y días festivos.</div>
+          </details>
+          <details>
+            <summary>¿Cuánto cuesta la consulta?</summary>
+            <div class="faq-body">Manejamos costos accesibles que varían según la especialidad y los estudios que se requieran. Escríbenos por <a href="#" data-cfg-href="wa" target="_blank" rel="noopener">WhatsApp</a> y con gusto te damos el costo actualizado, sin compromiso.</div>
+          </details>
+          <details>
+            <summary>¿En cuánto tiempo entregan los resultados de laboratorio?</summary>
+            <div class="faq-body">La mayoría de los estudios de rutina se entregan el mismo día. Para perfiles especiales te indicamos el tiempo exacto al momento de tomar la muestra.</div>
+          </details>
+          <details>
+            <summary>¿Dónde se encuentran y cómo llego?</summary>
+            <div class="faq-body">Estamos en <span data-cfg="direccion"></span>. Puedes abrir la ruta directamente en <a data-cfg-href="mapa" href="#" target="_blank" rel="noopener">Google Maps</a>.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="section alt">
       <div class="container">
         <div class="cta-banner reveal">
           <div>
@@ -299,5 +345,90 @@
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
   <script src="js/medicos.js"></script>
+
+  <!-- ============================================================
+       DATOS ESTRUCTURADOS (schema.org)
+       Esto es lo que permite a Google mostrar dirección, teléfono y
+       horario de la clínica directamente en los resultados de búsqueda.
+
+       ⚠ Google NO ejecuta config.js para leer esto, así que los datos
+       van escritos a mano: si cambias teléfono, dirección o correo en
+       js/config.js, cámbialos TAMBIÉN aquí. Es el único lugar del sitio
+       donde los datos de contacto se repiten.
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Centro Médico de Especialidades Santa Clara",
+    "description": "Centro médico con especialidades, laboratorio clínico, imagenología y urgencias las 24 horas en Lázaro Cárdenas, Michoacán.",
+    "url": "https://TU-DOMINIO.com/",
+    "image": "https://TU-DOMINIO.com/assets/og-image.jpg",
+    "logo": "https://TU-DOMINIO.com/assets/logo.jpg",
+    "telephone": "+527535329069",
+    "email": "melkymagaa@centromedicolzc.com",
+    "priceRange": "$$",
+    "currenciesAccepted": "MXN",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle D N° 193, Fracc. Agua Marina",
+      "addressLocality": "Ciudad Lázaro Cárdenas",
+      "addressRegion": "Michoacán",
+      "postalCode": "60950",
+      "addressCountry": "MX"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    }],
+    "availableService": [
+      { "@type": "MedicalProcedure", "name": "Urgencias 24 horas" },
+      { "@type": "MedicalProcedure", "name": "Laboratorio clínico" },
+      { "@type": "MedicalProcedure", "name": "Rayos X e imagenología" }
+    ],
+    "medicalSpecialty": [
+      "Pediatric", "Obstetric", "Cardiovascular", "Dermatology",
+      "Emergency", "Internal", "Musculoskeletal", "Dentistry"
+    ],
+    "sameAs": ["https://www.facebook.com/profile.php?id=100057571564324"]
+  }
+  </script>
+
+  <!-- Preguntas frecuentes: si editas la sección de FAQ de arriba, actualiza esto. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Necesito cita para consultar?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Para consulta de especialidad recomendamos agendar por WhatsApp o teléfono para asegurar el horario del médico. Las urgencias se atienden de inmediato, sin cita, a cualquier hora." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Atienden urgencias de noche y en fin de semana?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sí. Contamos con médico de guardia las 24 horas, los 365 días del año, incluidos domingos y días festivos." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto cuesta la consulta?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Los costos varían según la especialidad y los estudios que se requieran. Escríbenos por WhatsApp y te damos el costo actualizado, sin compromiso." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿En cuánto tiempo entregan los resultados de laboratorio?",
+        "acceptedAnswer": { "@type": "Answer", "text": "La mayoría de los estudios de rutina se entregan el mismo día. Para perfiles especiales indicamos el tiempo exacto al tomar la muestra." }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Dónde se encuentran y cómo llego?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Estamos en Calle D N° 193, Fracc. Agua Marina, C.P. 60950, Cd. Lázaro Cárdenas, Michoacán. Puedes abrir la ruta directamente en Google Maps." }
+      }
+    ]
+  }
+  </script>
 </body>
 </html>
